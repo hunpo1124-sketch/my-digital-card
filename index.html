@@ -4,80 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: #fae5e1;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* 点号 . 表示选择一个"class" */
-        .card {
-            background-color: white;
-            width: 90%;
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px ragb(0,0,0,0.1);
-
-        }
-
-        h1 {
-            color: #333;
-            font-size: 24px;
-        }
-
-        ul {
-            list-style: none; /* 去掉列表前面的那个丑陋的小圆点 */
-            padding: 0;
-        }
-
-        .avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid #ddd;
-        }
-
-        .btn {
-            display: block;
-            background-color: #3a82ef;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 10px 40px;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #8bb7f8;
-            transform: scale(1.05); /* 稍微放大一点点 */
-        }
-
-        @media (min-width: 600px) {
-            .card {
-                width: 400px;
-                margin: 100px auto;
-                padding: 40px;
-            }
-
-            h1 {
-                font-size: 32px;
-            }
-
-            .avatar {
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <!-- 这是我的个人信息区域 -->
     <div class="card">
+        <button id="theme-toggle" class="btn" style="margin: 0 auto; display: block;">切换模式</button>
         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Wtt" alt="我的头像" class="avatar">
 
         <h1>WEI</h1>
@@ -90,5 +23,7 @@
             <a href="https://www.google.com" target="_blank" class="btn">访问我的博客</a>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

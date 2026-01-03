@@ -1,0 +1,89 @@
+ body {
+            background-color: #fae5e1;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* 点号 . 表示选择一个"class" */
+        .card {
+            background-color: white;
+            width: 90%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px ragb(0,0,0,0.1);
+
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style: none; /* 去掉列表前面的那个丑陋的小圆点 */
+            padding: 0;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+        }
+
+        .btn {
+            display: block;
+            background-color: #3a82ef;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 10px 40px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #8bb7f8;
+            transform: scale(1.05); /* 稍微放大一点点 */
+        }
+
+        @media (min-width: 600px) {
+            .card {
+                width: 400px;
+                margin: 100px auto;
+                padding: 40px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .avatar {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+            }
+        }
+
+        /* 黑夜模式的样式 */
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+
+        .card.dark-mode {
+            background-color: #2d2d2d;
+            color: #fff;
+            box-shadow:0 4px 8px rgba(255,255,255,0.1) ;
+        }
+
+        .card.dark-card {
+            color: #e0b610;
+        }
+
+        /* 让变化有一个平滑的过渡 */
+        body, .card {
+            transition: background-color 0.5s, color 0.5s;
+        }
