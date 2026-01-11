@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 引入 Google Fonts (复制整段) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <!-- 这是我的个人信息区域 -->
     <div class="card">
-        <button id="theme-toggle" class="btn" style="margin: 0 auto; display: block;">切换模式</button>
-        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Wtt" alt="我的头像" class="avatar">
+        <div class="card-header">
+            <span class="status">🟢 在线</span>
+            <span class="menu">•••</span>
+        </div>
+        <button id="theme-toggle" class="link-btn" style="margin: 0 auto; display: block;">切换模式</button>
+
+        <div class="avatar-container">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Wtt" alt="我的头像" class="avatar">
+        
+        </div>
 
         <h1>WEI</h1>
         <p>开发练习 | 日拱一卒</p>
 
         <!-- 下面是列表 -->
-        <div class="links">
-            <a href="https://github.com" target="_blank" class="btn">GitHub</a>
-            <a href="mailto:hunpo1124@gmail.com" class="btn">发邮件给我</a>
-            <a href="https://www.google.com" target="_blank" class="btn">访问我的博客</a>
+        <div class="links" id="links-box">
+           
+        </div>
+
+        <h2>操作按钮</h2>
+        <div class="action-box">
+            <button class="btn save">保存</button>
+            <button class="btn delete">删除</button>
+            <button class="btn cancel">取消</button>
         </div>
     </div>
 
+
+    <div id="clock">正在获取时间...</div>
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>

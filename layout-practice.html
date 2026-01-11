@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 练习</title>
+    <style>
+        .box {
+            height: 100px;
+            background-color: #3498db;
+            border: 2px solid #2980b9;
+            color: white;
+            font-size: 24px;
+
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #eee;
+            height: 300px;
+            display: flex;
+            align-items: center;
+        }
+
+        .box-1 {
+            background-color: red;
+            flex-grow: 1;
+        }
+
+        .box-2 {
+            background-color: green;
+            flex-grow: 1;
+        }
+
+        .box-3 {
+            background-color: blue;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+    </div>
+
+</body>
+</html>
